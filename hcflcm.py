@@ -2,8 +2,12 @@ def gcd(n1, n2) :
     """ Finds the GCD (or HCF) of two numbers using the Euclidean algorithm"""
     if n1 > n2 :
         x, y = n1, n2
-    else :
+        
+    elif n1 < n2:
         x, y = n2, n1
+
+    else :
+        print "Both numbers are equal : %d" % n1
     while y != 0 :
         x, y = y, x % y
     return x
@@ -14,4 +18,4 @@ def lcm(n1, n2) :
 
 num1 = int(raw_input("Enter first number"))
 num2 = int(raw_input("Enter second number"))
-print "The GCD and LCM of %d and %d are \n \t*GCD: %d \n\t*LCM: %d" % (num1, num2, hcm(num1, num2), lcm(num1, num2)
+print "The GCD and LCM of %d and %d are \n \t*GCD: %d \n\t*LCM: %d" % (num1, num2, hcm(num1, num2), lcm(num1, num2))
