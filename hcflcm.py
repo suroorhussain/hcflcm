@@ -8,7 +8,8 @@ def gcd(n1, n2) :
 
     else :
         print "Both numbers are equal : %d" % n1
-    while y != 0 :
+        
+    while y :
         x, y = y, x % y
     return x
 
