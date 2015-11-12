@@ -18,4 +18,4 @@ def lcm(n1, n2) :
 
 num1 = int(raw_input("Enter first number"))
 num2 = int(raw_input("Enter second number"))
-print "The GCD and LCM of %d and %d are \n \t*GCD: %d \n\t*LCM: %d" % (num1, num2, hcm(num1, num2), lcm(num1, num2))
+print "The GCD and LCM of %d and %d are \n \t*GCD: %d \n\t*LCM: %d" % (num1, num2, gcd(num1, num2), lcm(num1, num2))
